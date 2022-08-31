@@ -5,4 +5,4 @@
 \#*# # Anything that begins and ends with a hash. (Uses a backslash
 
 # escape to allow the hash to not be recognized as a comment
-*.bak # Anything that ends with the extension “.bak”.
+**/*.bak # Anything that ends with the extension “.bak”.
