@@ -2,4 +2,4 @@
 
 #include <string>
 
-std::string topic_name("new_topic_name");
+const std::string topic_name("new_topic_name");
