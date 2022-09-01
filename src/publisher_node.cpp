@@ -6,13 +6,15 @@
 #include <cinttypes>
 #include <string>
 
+#include "publisher_package/topic_name.h"
+
 int main(int argc, char** argv) {
 
   ros::init(argc, argv, "publisher_node");
 
   ros::NodeHandle nh;
 
-  ros::Publisher chatter_pub = nh.advertise<std_msgs::String>("publisher_topic", 1000);
+  ros::Publisher chatter_pub = nh.advertise<std_msgs::String>(topic_name, 1000);
   ros::Rate loop_rate(1);
 
   std_msgs::String msg;
